@@ -1,10 +1,10 @@
 require 'sinatra'
 
 get '/' do
-  "Hello World"
+  File.new('public/hello.html').readlines
 end
 
 get '/wyncode' do
-  "Hello World"
+  "<strong>Hello</strong><em>world</em>"
 end
 #
